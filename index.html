@@ -2,100 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
-
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
-
-  Get Started
-
-  Bring everyone together to build better products.
-
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <header class="header">
+    <img src="images/logo.svg" alt="" class="header__logo">
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Pricing</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Product</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">About Us</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Careers</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Community</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button" data-variant="primary">Get Started</button>
+  </header>
+  <main>
+    <section class="hero grid">
+      <div class="hero__text">
+        <h1>Bring everyone together to build better products.</h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.
+        </p>
+        <button class="btn" data-variant="primary">Get Started</button>
+      </div>
+      <img src="images/illustration-intro.svg" alt="" class="hero__img">
+    </section>
+    <section class="features grid">
+      <div>
+        <h2>What’s different about Manage?</h2>
+        <p>
+          Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.
+        </p>
+      </div>
+      <div>
+        <article>
+          <h3>Track company-wide progress</h3>
+          <p>
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </article>
+        <article>
+          <h3>Advanced built-in reports</h3>
+          <p>
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </article>
+        <article>
+          <h3>Everything you need in one place</h3>
+          <p>
+            Stop jumping from one service to another to communicate, store files,
+            track tasks and share documents. Manage offers an all-in-one team
+            productivity solution.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="slider">
+      <h2 class="slider__title">What they’ve said</h2>
+      <div class="slider__slides">
+        <div class="slider__slide">
+          <img src="images/avatar-anisha.png" alt="Anisha Li" class="slider__img">
+          <strong class="slider__name">Anisha Li</strong>
+          <p class="slider__text">
+            “Manage has supercharged our team’s workflow. The ability to maintain
+            visibility on larger milestones at all times keeps everyone motivated.”
+          </p>
+        </div>
+        <div class="slider__slide">
+          <img src="images/avatar-ali.png" alt="Ali Bravo" class="slider__img">
+          <strong class="slider__name">Ali Bravo</strong>
+          <p class="slider__text">
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is much
+            more focused.”
+          </p>
+        </div>
+        <div class="slider__slide">
+          <img src="images/avatar-richard.png" alt="Richard Watts" class="slider__img">
+          <strong class="slider__name">Richard Watts</strong>
+          <p class="slider__text">
+            “Manage allows us to provide structure and process. It keeps us organized
+            and focused. I can’t stop recommending them to everyone I talk to!”
+          </p>
+        </div>
+        <div class="slider__slide">
+          <img src="images/avatar-shanai.png" alt="Shanai Gough" class="slider__img">
+          <strong class="slider__name">Shanai Gough</strong>
+          <p class="slider__text">
+            “Their software allows us to track, manage and collaborate on our projects
+            from anywhere. It keeps the whole team in-sync without being intrusive.”
+          </p>
+        </div>
+      </div>
+      <div class="slider__btns"></div>
+      <button class="btn" data-variant="primary">Get Started</button>
+    </section>
+    <section class="cta-bottom">
+      <div class="wrapper">
+        <strong class="cta-bottom__title">Simplify how your team works today.</strong>
+        <button class="btn" data-variant="secondary">Get Started</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer grid">
+    <ul class="footer__social grid">
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-facebook.svg" alt="Visit our Facebook page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-youtube.svg" alt="Visit our Youtube page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-twitter.svg" alt="Visit our Twitter page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-pinterest.svg" alt="Visit our Pinterest page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-instagram.svg" alt="Visit our Instagram page" class="footer__social-icon">
+        </a>
+      </li>
+    </ul>
+    <form class="footer__form">
+      <input type="text" placeholder="Updates in your inbox..." class="footer__search"
+        aria-label="Check updates in your inbox">
+      <button class="btn" data-variant="primary" aria-label="Search updates">Go</button>
+    </form>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Home</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Pricing</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Products</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">About Us</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Careers</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Community</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Privacy Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-logo-wrapper">
+      <img src="images/logo.svg" alt="" class="footer-logo">
+    </div>
+    <p>Copyright 2020. All Rights Reserved</p>
   </footer>
 </body>
 </html>
