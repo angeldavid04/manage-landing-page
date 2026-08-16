@@ -5,3 +5,13 @@
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input,
+::placeholder {
+  font-family: inherit;
+}
