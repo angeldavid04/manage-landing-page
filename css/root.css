@@ -9,4 +9,9 @@
   --gray50: hsl(0, 0%, 98%);
   /* TYPOGRAPHY */
   --ff-base: "Be Vietnam Pro", sans-serif;
+  /* SPACING */
+  --space-1: clamp(2rem, 0.5rem + 0.5vw, 2.5rem);
+  --space-2: clamp(2rem, 0.5rem + 1vw, 2.5rem);
+  --space-3: clamp(2rem, 1rem + 12vw, 8rem);
+  --space-4: clamp(4rem, 1rem + 12vw, 12rem);
 }

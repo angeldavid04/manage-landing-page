@@ -33,7 +33,7 @@
         </li>
       </ul>
     </nav>
-    <button class="header__btn button" data-variant="primary">Get Started</button>
+    <button class="header__btn btn" data-variant="primary">Get Started</button>
     <button class="header__menu-btn"><img src="images/icon-hamburger.svg" alt=""></button>
 
   </header>
@@ -128,13 +128,17 @@
     <section class="cta-bottom">
       <div class="cta-bottom__wrapper wrapper">
         <strong class="cta-bottom__title">Simplify how your team works today.</strong>
-        <button class="btn" data-variant="secondary">Get Started</button>
+        <button class="cta-bottom__btn btn" data-variant="secondary">Get Started</button>
       </div>
+      <picture>
+        <source media="(width >= 62rem)" srcset="images/bg-simplify-section-desktop.svg">
+        <img src="images/bg-simplify-section-mobile.svg" alt="" class="cta-bottom__bg">
+      </picture>
     </section>
   </main>
   <footer class="footer">
     <form class="footer__form">
-      <input type="text" placeholder="Updates in your inbox..." class="footer__search"
+      <input type="email" placeholder="Updates in your inbox..." class="footer__search"
         aria-label="Check updates in your inbox">
       <button class="btn" data-variant="primary" data-shadow="none" aria-label="Search updates">GO</button>
     </form>
@@ -191,7 +195,7 @@
       </li>
     </ul>
     <div class="footer__logo-wrapper">
-      <img src="images/logo-alt.svg" alt="" class="footer-logo">
+      <img src="images/logo-alt.svg" alt="" class="footer__logo">
     </div>
     <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
   </footer>
