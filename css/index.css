@@ -26,18 +26,19 @@ p {
 
 /* ----- COMPONENTS ----- */
 .btn {
-  padding-block: 0.75rem;
-  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
   border-radius: 32px;
   border: none;
   cursor: pointer;
   font-weight: 500;
+  letter-spacing: 0.05em;
 
   &[data-variant="primary"] {
     background-color: var(--orange400);
     color: var(--orange50);
-    box-shadow: 0 8px 7px 0px
-      color-mix(in srgb, var(--orange400) 22.25%, transparent);
+    box-shadow: 0 8px 12px 0px
+      color-mix(in srgb, var(--orange400) 45.25%, transparent);
   }
 
   &[data-variant="secondary"] {
