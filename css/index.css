@@ -114,7 +114,7 @@ p {
 
 .hero__title {
   margin-block: 0 var(--space-2);
-  font-size: clamp(2rem, 1rem + 2vw, 4rem);
+  font-size: var(--fs-l);
 }
 
 .hero__description {
@@ -134,7 +134,7 @@ p {
 .features__title {
   text-align: center;
   margin-block: 0 var(--space-2);
-  font-size: clamp(2rem, 1rem + 1.75vw, 2.75rem);
+  font-size: var(--fs-md);
 }
 
 .features__description {
@@ -219,7 +219,7 @@ p {
 .slider__title {
   text-align: center;
   margin-block: 0 var(--space-1);
-  font-size: clamp(2rem, 1rem + 1.75vw, 2.75rem);
+  font-size: var(--fs-md);
 }
 
 .slider__text {
