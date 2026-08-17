@@ -23,3 +23,27 @@ p {
 .wrapper {
   margin-inline: calc((25% - 50px) / 2);
 }
+
+/* ----- COMPONENTS ----- */
+.btn {
+  padding-block: 0.75rem;
+  padding-inline: 1.5rem;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+
+  &[data-variant="primary"] {
+    background-color: var(--orange400);
+    color: var(--orange50);
+    box-shadow: 0 8px 7px 0px
+      color-mix(in srgb, var(--orange400) 22.25%, transparent);
+  }
+
+  &[data-variant="secondary"] {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--orange400);
+    box-shadow: 0 4px 12px 0px
+      color-mix(in srgb, var(--gray950) 10%, transparent);
+  }
+}
