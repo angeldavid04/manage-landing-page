@@ -11,9 +11,10 @@
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
+  <img src="images/bg-tablet-pattern.svg" alt="" class="pattern">
   <header class="header">
     <img src="images/logo.svg" alt="" class="header__logo">
-    <nav class="header__nav">
+    <nav class="header__nav" inert>
       <ul class="header__list">
         <li class="header__item">
           <a href="#" class="header__link">Pricing</a>
@@ -32,49 +33,51 @@
         </li>
       </ul>
     </nav>
-    <button class="button" data-variant="primary">Get Started</button>
+    <button class="header__btn button" data-variant="primary">Get Started</button>
+    <button class="header__menu-btn"><img src="images/icon-hamburger.svg" alt=""></button>
+
   </header>
   <main>
-    <section class="hero grid">
+    <section class="hero">
+      <img src="images/illustration-intro.svg" alt="" class="hero__img">
       <div class="hero__text">
-        <h1>Bring everyone together to build better products.</h1>
-        <p>
+        <h1 class="hero__title">Bring everyone together to build better products.</h1>
+        <p class="hero__description">
           Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.
         </p>
         <button class="btn" data-variant="primary">Get Started</button>
       </div>
-      <img src="images/illustration-intro.svg" alt="" class="hero__img">
     </section>
-    <section class="features grid">
-      <div>
-        <h2>What’s different about Manage?</h2>
-        <p>
+    <section class="features">
+      <div class="features__intro">
+        <h2 class="features__title">What’s different about Manage?</h2>
+        <p class="features__description">
           Manage provides all the functionality your team needs, without
           the complexity. Our software is tailor-made for modern digital
           product teams.
         </p>
       </div>
-      <div>
-        <article>
-          <h3>Track company-wide progress</h3>
-          <p>
+      <div class="features__features">
+        <article class="features__feature">
+          <h3 class="features__feature-title">Track company-wide progress</h3>
+          <p class="features__feature-text">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
         </article>
-        <article>
-          <h3>Advanced built-in reports</h3>
-          <p>
+        <article class="features__feature">
+          <h3 class="features__feature-title">Advanced built-in reports</h3>
+          <p class="features__feature-text">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
         </article>
-        <article>
-          <h3>Everything you need in one place</h3>
-          <p>
+        <article class="features__feature">
+          <h3 class="features__feature-title">Everything you need in one place</h3>
+          <p class="features__feature-text">
             Stop jumping from one service to another to communicate, store files,
             track tasks and share documents. Manage offers an all-in-one team
             productivity solution.
@@ -82,7 +85,7 @@
         </article>
       </div>
     </section>
-    <section class="slider">
+    <section id="slider" class="slider">
       <h2 class="slider__title">What they’ve said</h2>
       <div class="slider__slides">
         <div class="slider__slide">
@@ -120,43 +123,16 @@
         </div>
       </div>
       <div class="slider__btns"></div>
-      <button class="btn" data-variant="primary">Get Started</button>
+      <button class="slider__cta-btn btn" data-variant="primary">Get Started</button>
     </section>
     <section class="cta-bottom">
-      <div class="wrapper">
+      <div class="cta-bottom__wrapper wrapper">
         <strong class="cta-bottom__title">Simplify how your team works today.</strong>
         <button class="btn" data-variant="secondary">Get Started</button>
       </div>
     </section>
   </main>
-  <footer class="footer grid">
-    <ul class="footer__social grid">
-      <li class="footer__social-item">
-        <a href="#" class="footer__social-link">
-          <img src="images/icon-facebook.svg" alt="Visit our Facebook page" class="footer__social-icon">
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a href="#" class="footer__social-link">
-          <img src="images/icon-youtube.svg" alt="Visit our Youtube page" class="footer__social-icon">
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a href="#" class="footer__social-link">
-          <img src="images/icon-twitter.svg" alt="Visit our Twitter page" class="footer__social-icon">
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a href="#" class="footer__social-link">
-          <img src="images/icon-pinterest.svg" alt="Visit our Pinterest page" class="footer__social-icon">
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a href="#" class="footer__social-link">
-          <img src="images/icon-instagram.svg" alt="Visit our Instagram page" class="footer__social-icon">
-        </a>
-      </li>
-    </ul>
+  <footer class="footer">
     <form class="footer__form">
       <input type="text" placeholder="Updates in your inbox..." class="footer__search"
         aria-label="Check updates in your inbox">
@@ -187,10 +163,37 @@
         </li>
       </ul>
     </nav>
-    <div class="footer-logo-wrapper">
-      <img src="images/logo.svg" alt="" class="footer-logo">
+    <ul class="footer__social">
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-facebook.svg" alt="Visit our Facebook page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-youtube.svg" alt="Visit our Youtube page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-twitter.svg" alt="Visit our Twitter page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-pinterest.svg" alt="Visit our Pinterest page" class="footer__social-icon">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link">
+          <img src="images/icon-instagram.svg" alt="Visit our Instagram page" class="footer__social-icon">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__logo-wrapper">
+      <img src="images/logo-alt.svg" alt="" class="footer-logo">
     </div>
-    <p>Copyright 2020. All Rights Reserved</p>
+    <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
   </footer>
 </body>
 </html>

@@ -7,4 +7,6 @@
   --gray950: hsl(233, 12%, 13%);
   --orange50: hsl(13, 100%, 96%);
   --gray50: hsl(0, 0%, 98%);
+  /* TYPOGRAPHY */
+  --ff-base: "Be Vietnam Pro", sans-serif;
 }

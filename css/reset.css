@@ -6,12 +6,30 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
 }
 
 input,
+button,
 ::placeholder {
   font-family: inherit;
+}
+
+ul[class] {
+  list-style-type: none;
 }

@@ -1,3 +1,25 @@
 @import url("root.css");
 @import url("fonts.css");
 @import url("reset.css");
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--ff-base);
+  color: var(--blue950);
+  background-color: var(--gray50);
+  overflow-x: hidden;
+  position: relative;
+}
+
+p {
+  color: hsl(0, 0%, 42%);
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.wrapper {
+  margin-inline: calc((25% - 50px) / 2);
+}
