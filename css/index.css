@@ -47,6 +47,10 @@ p {
     box-shadow: 0 4px 12px 0px
       color-mix(in srgb, var(--gray950) 10%, transparent);
   }
+
+  &[data-shadow="none"] {
+    box-shadow: none;
+  }
 }
 
 /* ----- HEADER ----- */
