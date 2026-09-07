@@ -2,6 +2,7 @@ const $menuBtn = document.querySelector(".header__menu-btn");
 const $btnImage = $menuBtn.querySelector("img");
 const $menu = document.querySelector(".header__nav");
 const mqDesktop = window.matchMedia("(width >= 62rem)");
+const $slider = document.querySelector(".slider__slides");
 
 function openMenu() {
   $menu.inert = false;
@@ -34,6 +35,14 @@ function cleanAria() {
   } else {
     closeMenu();
   }
+}
+
+function slider() {
+  const { width, x } = document
+    .querySelector(".slider__slide")
+    .getBoundingClientRect();
+
+  $slider.scrollBy({ left: width, behavior: "smooth" });
 }
 
 document.addEventListener("DOMContentLoaded", cleanAria);
