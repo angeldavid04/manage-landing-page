@@ -38,9 +38,7 @@ function cleanAria() {
 }
 
 function slider() {
-  const { width, x } = document
-    .querySelector(".slider__slide")
-    .getBoundingClientRect();
+  const { width, x } = document.querySelector("body").getBoundingClientRect();
 
   $slider.scrollBy({ left: width, behavior: "smooth" });
 }
