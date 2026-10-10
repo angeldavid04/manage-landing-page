@@ -54,9 +54,6 @@ ul[class] {
   list-style-type: none;
 }
 
-@import url("fonts.css");
-@import url("reset.css");
-
 html {
   overflow-x: hidden;
 
