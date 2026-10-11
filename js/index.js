@@ -31,7 +31,6 @@ function cleanAria() {
   if (mqDesktop.matches) {
     $menu.removeAttribute("inert");
     $menu.removeAttribute("data-state");
-    $menu.removeAttribute("inert");
     $btnImage.src = "images/icon-hamburger.svg";
   } else {
     closeMenu();
